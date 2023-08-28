@@ -1,100 +1,70 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 05 - Explorando o Dashboard (Painel Gerencial)
+# Laboratorio Práctico 05 - Explorando el Tablero (Panel de Control)
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
+Entrenamiento práctico en la plataforma Databricks enfocado en las funcionalidades de análisis (SQL, Query, Dask, DataViz, SQL end-point).
 
+## Objetivos del Ejercicio
 
-## Objetivos do Exercício
+El objetivo de este laboratorio es explorar las funcionalidades de consultas con Gráficos de Visualización y Filtros para luego montar un Panel de Control.
 
-O objetivo desse laboratório é explorar as funcionalidade de consultas com Gráficos de Visualização e Filtros para depois montar um Painel Gerencial</br>
-</br>
+Vamos a utilizar el "Editor SQL".
 
-Vamos utilizar o "Editor SQL".
-
-## Exercício 05.01 - Criação da Query
+## Ejercicio 05.01 - Creación de la Consulta
 
 ``` sql
-
-
-SELECT * FROM academy.SEU_NOME.bronze_dolar;
+SELECT * FROM academy.<tu_login>.bronze_dolar;
 
 
 ```
-Resultado da Query:
+Resultado de la consulta:
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_01.png" style="height: 200px;">
+
+
 </br></br>
 
-## Exercício 05.02 - Criando a Visualização e o Filtro
-
-Na barra de resultados, clique no botão **"+"**, e escolha a opção "Visualization".
+## Ejercicio 05.02 - Creando la Visualización y el Filtro
+En la barra de resultados, haz clic en el botón "+", y elige la opción "Visualización".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_02.png" style="height: 200px;">
-
-</br></br>
-No Visualization Type, escolha "LINE":
+En Tipo de Visualización, elige "LINE":
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_03.png" style="height: 200px;">
-
-</br></br>
-Na "X Column" (eixo X), escolha a variável  "dolar_dia".
+En la "X Column" (eje X), elige la variable "dolar_dia".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_04.png" style="height: 200px;">
-
-</br></br>
-Na "Y Columns" (eixo Y), escolha a variável  "dolar_fechamento".</br>
-Escolha também a forma de agregação:  Média (Average).
+En la "Y Columns" (eje Y), elige la variable "dolar_cotizacion".
+Elige también la forma de agregación: Media (Promedio).
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_05.png" style="height: 200px;">
-
-</br></br>
-Clique no título da visualização e renomeie para "grafico_dolar".
+Haz clic en el título de la visualización y renómbralo a "grafico_dolar".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_06.png" style="height: 150px;">
-
-O resultado esperado é igual ao gráfico abaixo:
+El resultado esperado es igual al gráfico de abajo:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_07.png" style="height: 500px;">
-
-</br></br>
-
-Clique novamente no botão **"+"**, e adicione um FILTRO:
+Haz clic nuevamente en el botón "+", y añade un FILTRO:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_09.png" style="height: 150px;">
-
-</br></br>
-
-Escolha a coluna "dolar_ano" para utilizar no FILTRO:
+Elige la columna "dolar_anio" para usar en el FILTRO:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_10.png" style="height: 300px;">
-
-</br></br>
-Resultado ficará como abaixo:
+El resultado se verá así:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_11.png" style="height: 250px;">
-
-</br></br>
-
-Salve o resultado da Query, com o nome:   "Query_Historico_dolar_" +  <SEU_NOME>.
+Guarda el resultado de la Consulta, con el nombre: "Query_Historico_dolar_" + <tu_login>.
 </br></br></br>
 
-## Exercício 05.03 - Criando o Dashboard
-
-No Menu Lateral, escolha a opção DASHBOARDS:
+## Ejercicio 05.03 - Creando el Dashboard
+En el Menú Lateral, elige la opción DASHBOARDS:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_08.png" style="height: 150px;">
-</br></br>
+Haz clic en la opción CREATE DASHBOARD.
 
-Clique na opção **CREATE DASHBOARD**
-
-</br></br>
-</br></br>
-
-Na tela do Dashboard, clique no botão **"ADD"**, e escolha a opção:  "**TEXT BOX**".
+En la pantalla del Dashboard, haz clic en el botón "ADD", y elige la opción: "TEXT BOX".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_12.png" style="height: 100px;">
-
-No campo texto, digite conforme abaixo:
+En el campo texto, escribe lo siguiente:
 
 ``` md
 
@@ -105,7 +75,7 @@ No campo texto, digite conforme abaixo:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_13.png" style="height: 300px;">
 
-Repita a operação.  Clique no botão **ADD**, e novamente a opção "Text Box".  Digite conforme abaixo:
+Repite la operación.  haz clic en el botón "ADD", y elige la opción: "TEXT BOX". Escribe lo siguiente:
 
 ``` md
 
@@ -116,21 +86,21 @@ Repita a operação.  Clique no botão **ADD**, e novamente a opção "Text Box"
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_14.png" style="height: 200px;">
 
-Clique novamente no botão ADD, e selecione a opção "**VISUALIZATION**".
+Haz clic nuevamente en el botón ADD, y selecciona la opción "VISUALIZATION".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_15.png" style="height: 200px;">
 
-Escolha o nome da Query que foi gravada no exercício anterior.
+Elige el nombre de la consulta que se guardó en el ejercicio anterior.
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_16.png" style="height: 250px;">
 
-Clique novamente no botão ADD, e selecione a opção "**FILTER**", e configure conforme abaixo:
+Haz clic nuevamente en el botón ADD, y selecciona la opción "FILTRO", y configura según lo siguiente:
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_17.png" style="height: 200px;">
 
 </br></br></br>
 
-O Resultado final deve ficar conforme abaixo.   Grave seu Dashboard.
+El resultado final debería verse como sigue. Guarda tu dashboard.
 
 </br></br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_final.png" style="height: 600px;">

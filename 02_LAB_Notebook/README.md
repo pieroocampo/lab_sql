@@ -1,53 +1,50 @@
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 02 - Executando comandos pelo Notebook
+# Práctica LAB 02 - Ejecutando comandos a través del Notebook
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
+Entrenamiento práctico en la plataforma Databricks centrado en las funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
  </br> </br>
 
-## Objetivos do Exercício
+## Objetivos del Ejercicio
 
-Nesse exercício vamos importar um Notebook (em linguagem Python) para copiar as bases de dados no formato CSV (texto separado por vírgulas), que serão utilizados nos próximos exercícios.
+En este ejercicio vamos a importar un Notebook (en lenguaje Python) para copiar las bases de datos en formato CSV (texto separado por comas), que se utilizarán en los próximos ejercicios.
  </br>
 
+## Ejercicio 2:
 
-## Exercício 2:
+* Elija la opción del MENÚ: "Workspace", como se muestra en la figura a continuación.</br>
+* Seleccione su inicio de sesión en Workspace.</br>
+* Haga clic con el botón derecho del mouse en el área destacada.</br>
+* Seleccione la opción IMPORTAR.</br> </br>
 
-* Escolha a opção do MENU:  "Workspace", conforme figura abaixo.</br>
-* Selecione o seu login no Workspace.</br>
-* Clique com o botão direito do mouse na área destacada.</br>
-* Selecione a opção IMPORTAR.</br> </br>
-
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_1.png">
+<img src="https://raw.githubusercontent.com/pieroocampo/lab_sql/main/images/lab02_1.png">
 </br></br>
-Na janela de importação, clique na opção "**URL**".
+En la ventana de importación, haga clic en la opción "**URL**".
 
-No campo texto da URL, digite o endereço do LINK destacado abaixo:
+En el campo de texto de URL, escriba la dirección del ENLACE resaltado a continuación:
 
 ``` html
 
-
-https://github.com/Databricks-BR/lab_sql/blob/main/02_LAB_Notebook/lab02_01_carga_csv.ipynb
-
+https://github.com/pieroocampo/lab_sql/blob/main/02_LAB_Notebook/lab02_01_carga_csv.ipynb
 
 ```
-Conforme a figura abaixo:
+Como se muestra en la figura siguiente:
 </br></br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_2.png" style="height: 250px;">>
+<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_2.png" style="height: 250px;">
 </br></br>
-* Altere a variável com o nome do seu login  (SCHEMA), conforme ficgura abaixo.
-* Não esqueça de tirar o caracter "#" (jogo da velha) da frente da linha.
-* Verifique se o Cluster (máquina virtual que executará o processo) está Atachada (barra superior ao lado do botão "Run All"). 
+
+Modifique la variable con el nombre de su inicio de sesión (SCHEMA), como se muestra en la figura a continuación.
+No olvide quitar el carácter "#" del inicio de la línea.
+Verifique si el Cluster (máquina virtual que ejecutará el proceso) está Adjunto (barra superior al lado del botón "Run All").
 </br></br>
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_3.png" style="height: 200px;">>
+<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_3.png" style="height: 200px;">
 </br></br>
-Execute os comandos do Notebook, clicando no botão "RUN ALL".
+Ejecute los comandos del Notebook, haciendo clic en el botón "RUN ALL".
 </br></br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_4.png">
 </br></br> </br> </br>
-Visualize os resultados no Data Explorer:
-
+Visualice los resultados en Data Explorer:
 </br></br>
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab02_5.png">
 

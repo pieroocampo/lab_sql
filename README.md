@@ -3,36 +3,35 @@
 
 # Databricks SQL Labs 
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
+Entrenamiento práctico en la plataforma Databricks centrado en las funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
 
-## Ementa do Curso
+## Temario del Curso
 
-| # | Tópicos | Duração |
+| # | Temas | Duración |
 | -- | -- | -- |
-| 1 | Conceito de Lakehouse, Databricks SQL, Custo eficiente, SQL Serverless, Menus e UI | 30 min |
-| 2 | Laboratório 01 - Comandos básicos em SQL no  Editor de SQL e Unity Catalog         | 30 min |
-| 3 | Laboratório 02 - Ingestão de tabelas CSV, Uso do Notebook e Data Explorer          | 30 min |
-| 4 | Laboratório 03 - Consultas avançadas, Query History e Query Profiler               | 30 min |
-| 5 | Laboratório 04 - Criação de um Alerta                                              | 30 min |
-| 6 | Laboratório 05 - Criação de um Painel (Dashboard)                                  | 30 min |
-| 7 | Considerações finais, Integração de Soluções e Referências Adicionais              | 30 min |
-| 8 | Perguntas e Respostas                                                              | 15 min |
-| 9 | Pesquisa de Satisfação                                                             |  5 min |
+| 1 | Concepto de Lakehouse, Databricks SQL, Costo eficiente, SQL Serverless, Menús e IU | 30 min |
+| 2 | Laboratorio 01 - Comandos básicos en SQL en el Editor de SQL y Unity Catalog       | 30 min |
+| 3 | Laboratorio 02 - Ingesta de tablas CSV, Uso de Notebook y Data Explorer            | 30 min |
+| 4 | Laboratorio 03 - Consultas avanzadas, Historial de Query y Query Profiler          | 30 min |
+| 5 | Laboratorio 04 - Creación de una Alerta                                           | 30 min |
+| 6 | Laboratorio 05 - Creación de un Panel (Dashboard)                                 | 30 min |
+| 7 | Consideraciones finales, Integración de Soluciones y Referencias Adicionales       | 30 min |
+| 8 | Preguntas y Respuestas                                                            | 15 min |
 
 </br>
 
-## Referências Adicionais
+## Referencias Adicionales
 
-* [Página principal do Databrick SQL](https://www.databricks.com/br/product/databricks-sql)
+* [Página principal de Databrick SQL](https://www.databricks.com/product/databricks-sql)
 * [What is Data Warehousing on Databricks](https://docs.databricks.com/sql/index.html#what-is-data-warehousing-on-databricks)
-* [SQL Language reference - Inglês](https://docs.databricks.com/sql/language-manual/index.html)
-* [SQL Language reference - Português](https://learn.microsoft.com/pt-br/azure/databricks/sql/language-manual)
+* [SQL Language reference - Inglés](https://docs.databricks.com/sql/language-manual/index.html)
+* [SQL Language reference - Español](https://learn.microsoft.com/es-mx/azure/databricks/sql/language-manual)
 
 
 
-## Comunidade Databricks Brasil
+## Comunidad Databricks Latinoamérica
 
-- Grupo no LinkedIn [Databricks Brasil - Lakehouse 🏠 🇧🇷](https://www.linkedin.com/groups/14100135)
+- Grupo de LinkedIn [Databricks en Español - The Lakehouse 🏠](https://www.linkedin.com/groups/14082071/)
 
 </br>
 
@@ -48,12 +47,6 @@ Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de An
 </br></br>
 
 ## Databricks ACADEMY
-
-Trilhas disponíveis (Learning Plan):
-* What is the Databricks Lakehouse Platform? (ID: E-Q079O1)
-* Databricks SQL for Technical Onboarding (ID: E-VMWR71)
-* Data Analysis with Databricks SQL (ID: E-1QW751)
-
 Hot Site: Data Analysis with Databricks SQL 
 * https://www.databricks.com/learn/training/catalog/data-analysis
 </br>

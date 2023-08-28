@@ -1,27 +1,26 @@
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 03 - Explorando o Query Profiler 
+# Práctica LAB 03 - Explorando el Query Profiler
 
-Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
+Entrenamiento práctico en la plataforma Databricks centrado en las funcionalidades de análisis (SQL, Query, Dask, DataViz, SQL end-point).
 
+## Objetivos del Ejercicio
 
-## Objetivos do Exercício
-
-O objetivo desse laboratório é explorar as funcionalidade de plano de execução das consultas (Query Profiler). Sabendo identificar os gargalos e oportunidades de melhoria de desempenho. </br>
-</br>
-
+El objetivo de este laboratorio es explorar las funcionalidades del plan de ejecución de consultas (Query Profiler). Identificando los cuellos de botella y oportunidades de mejora en rendimiento.
+</br></br>
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/desnormaliza.png">
 
-Vamos utilizar o "Editor SQL".
+Vamos a usar el "Editor SQL".
 
-## Exercício 03.01 - Criação da Query
+## Ejercicio 03.01 - Creación de la Consults
 
 ``` sql
 USE CATALOG academy;
 
-USE <seu_nome_login>;
+USE <tu_login>;
+
 
 CREATE OR REPLACE TABLE silver_empresas AS
 SELECT 
@@ -62,66 +61,66 @@ on emp.natureza_juridica = nat.codigo;
 
 ```
 
-## Exercício 03.02 - Visualizando o Histórico de execução das Consultas
+## Ejercicio 03.02 - Visualizando el Historial de ejecución de las Consultas
 
 
-No Menu, escolha a opção "Query History"
+En el Menú, elija la opción "Historial de Consultas"
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_1.png" style="height: 200px;">
-
-Filtre as Consultas (p.ex.  Selecione suas próprias Queries):
+Filtre las Consultas (por ejemplo, seleccione sus propias Queries):
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_2.png" style="height: 300px;">
 
-## Exercício 03.03 - Analisando o Detalhe da Execução
+
+## Ejercicio 03.03 - Analizando el Detalle de la Ejecución
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_3.png" style="height: 200px;">
 
 
-## Exercício 03.04 - Analisando o Query Profiler
+## Ejercicio 03.04 - Analizando el Query Profiler
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_4.png" style="height: 200px;">
 
 
-## Exercício 03.05 - Analisando o Plano de Execução
+## Ejercicio 03.05 - Analizando el Plan de Ejecución
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_5.png" style="height: 250px;">
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab03_6.png" style="height: 700px;">
 
 
-## Exercício 03.06 - Colocando Comentários na Tabela e nas Colunas
+## Ejercicio 03.06 - Añadiendo Comentarios en la Tabla y en las Columnas
 
 ``` sql
 USE CATALOG academy;
 
-USE <seu_nome_login>;
+USE <tu_login>;
 
-COMMENT ON TABLE silver_empresas IS 'Tabela contendo dados das empresas';
+COMMENT ON TABLE silver_empresas IS 'Tabla con datos de las empresas';
 
-ALTER TABLE silver_empresas ALTER COLUMN cnpj_basico COMMENT 'número do CNPJ raiz de 8 posições';
-ALTER TABLE silver_empresas ALTER COLUMN nome_matriz COMMENT 'Nome da Matriz';
-ALTER TABLE silver_empresas ALTER COLUMN nome_fantasia_empresa COMMENT 'Nome fantasia da empresa';
-ALTER TABLE silver_empresas ALTER COLUMN nome_razao_social COMMENT 'Nome da Razão Social';
-ALTER TABLE silver_empresas ALTER COLUMN cod_situacao_cadastral COMMENT 'Código da Situação Cadastral';
-ALTER TABLE silver_empresas ALTER COLUMN data_situacao_cadastral COMMENT 'Data da Situação Cadastral';
-ALTER TABLE silver_empresas ALTER COLUMN motivo_situacao_cadastral COMMENT 'Motivo da Situação Cadastral';
-ALTER TABLE silver_empresas ALTER COLUMN data_inicio_atividade COMMENT 'Data de início da atividade';
-ALTER TABLE silver_empresas ALTER COLUMN cnae_principal COMMENT 'CNAE Código da Natureza Economica';
-ALTER TABLE silver_empresas ALTER COLUMN cnae_descricao COMMENT 'Descrição do CNAE';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_tipo_logradouro COMMENT 'Endereço - Tipo de Logradouro';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_nome_logradouro COMMENT 'Endereço - Nome do Logradouro';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_numero_logradouro COMMENT 'Endereço - Número do Logradouro';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_bairro_logradouro COMMENT 'Endereço - Bairro do Logradouro';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_numero_cep COMMENT 'Endereço - número do CEP';
-ALTER TABLE silver_empresas ALTER COLUMN endereco_unidade_federativa COMMENT 'Endereço - Unidade Federativa';
-ALTER TABLE silver_empresas ALTER COLUMN codigo_municipio_siafi COMMENT 'Código do Município SIAFI';
-ALTER TABLE silver_empresas ALTER COLUMN cod_natureza_juridica COMMENT 'Código da Natureza Jurídica';
-ALTER TABLE silver_empresas ALTER COLUMN desc_natureza_juridica COMMENT 'Descrição da Natureza Jurídica';
-ALTER TABLE silver_empresas ALTER COLUMN qualificacao_responsavel COMMENT 'Qualificação do Responsável';
-ALTER TABLE silver_empresas ALTER COLUMN val_capital_social COMMENT 'Valor do Capital Social';
-ALTER TABLE silver_empresas ALTER COLUMN cod_porte_empresa COMMENT 'Código do Porte da Empresa';
-ALTER TABLE silver_empresas ALTER COLUMN desc_porte_empresa COMMENT 'Descrição do Porte da Empresa';
-ALTER TABLE silver_empresas ALTER COLUMN ente_federativo_responsavel COMMENT 'Ente Federativo Responsável';
+ALTER TABLE silver_empresas ALTER COLUMN identificador COMMENT 'Identificador';
+ALTER TABLE silver_empresas ALTER COLUMN nombre_matriz COMMENT 'Nombre de la Matriz';
+ALTER TABLE silver_empresas ALTER COLUMN nombre_comercial_empresa COMMENT 'Nombre Comercial';
+ALTER TABLE silver_empresas ALTER COLUMN nombre_razon_social COMMENT 'Razón Social';
+ALTER TABLE silver_empresas ALTER COLUMN cod_situacion_cadastral COMMENT 'Código da Situación Cadastral';
+ALTER TABLE silver_empresas ALTER COLUMN data_situacion_cadastral COMMENT 'Datos de Situación Cadastral';
+ALTER TABLE silver_empresas ALTER COLUMN motivo_situacion_cadastral COMMENT 'Motivo de Situación Cadastral';
+ALTER TABLE silver_empresas ALTER COLUMN data_inicio_actividades COMMENT 'Inicio de actividaddes';
+ALTER TABLE silver_empresas ALTER COLUMN cnae_principal COMMENT 'Código de Naturaleza Económica';
+ALTER TABLE silver_empresas ALTER COLUMN cnae_descripcion COMMENT 'Descripción de Naturaleza Económica';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_tipo_via COMMENT 'Dirección - Tipo de Vía';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_nombre_via COMMENT 'Dirección - Nombre de Vía';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_numero_via COMMENT 'Dirección - Número de Vía';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_colonia COMMENT 'Dirección - Colonia';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_codigo_postal COMMENT 'Dirección - Código Postal';
+ALTER TABLE silver_empresas ALTER COLUMN direccion_entidad_federativa COMMENT 'Dirección - Entidad Federativa';
+ALTER TABLE silver_empresas ALTER COLUMN codigo_municipio COMMENT 'Código de Municipio';
+ALTER TABLE silver_empresas ALTER COLUMN cod_naturaleza_juridica COMMENT 'Código de Naturaleza Jurídica';
+ALTER TABLE silver_empresas ALTER COLUMN desc_naturaleza_juridica COMMENT 'Descripción de Naturaleza Jurídica';
+ALTER TABLE silver_empresas ALTER COLUMN calificacion_responsable COMMENT 'Calificación del Responsable';
+ALTER TABLE silver_empresas ALTER COLUMN val_capital_social COMMENT 'Valor del capital social';
+ALTER TABLE silver_empresas ALTER COLUMN cod_tipo_empresa COMMENT 'Código del Tipo de Empresa';
+ALTER TABLE silver_empresas ALTER COLUMN desc_tipo_empresa COMMENT 'Descripción del Tipo de Empresa';
+ALTER TABLE silver_empresas ALTER COLUMN entidad_federativa_responsable COMMENT 'Entidad Federativa Responsable';
 ```
 
