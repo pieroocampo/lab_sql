@@ -26,7 +26,7 @@ SELECT
   est.cnpj_basico AS cnpj_basico,
   matriz_filial AS nombre_matriz,
   nombre_comercial AS nombre_comercial_empresa,
-  razon_social AS nome_razon_social,
+  razon_social AS nombre_razon_social,
   codigo_situacion_cadastral AS codigo_situacion_cadastral,
   data_situacion_cadastral AS data_situacion_cadastral,
   motivo_situacion_cadastral AS motivo_situacion_cadastral,
@@ -93,14 +93,14 @@ USE <tu_login>;
 
 COMMENT ON TABLE silver_empresas IS 'Tabla con datos de las empresas';
 
-ALTER TABLE silver_empresas ALTER COLUMN identificador COMMENT 'Identificador';
+ALTER TABLE silver_empresas ALTER COLUMN cnpj_basico COMMENT 'Identificador';
 ALTER TABLE silver_empresas ALTER COLUMN nombre_matriz COMMENT 'Nombre de la Matriz';
 ALTER TABLE silver_empresas ALTER COLUMN nombre_comercial_empresa COMMENT 'Nombre Comercial';
 ALTER TABLE silver_empresas ALTER COLUMN nombre_razon_social COMMENT 'Razón Social';
-ALTER TABLE silver_empresas ALTER COLUMN cod_situacion_cadastral COMMENT 'Código da Situación Cadastral';
+ALTER TABLE silver_empresas ALTER COLUMN codigo_situacion_cadastral COMMENT 'Código da Situación Cadastral';
 ALTER TABLE silver_empresas ALTER COLUMN data_situacion_cadastral COMMENT 'Datos de Situación Cadastral';
 ALTER TABLE silver_empresas ALTER COLUMN motivo_situacion_cadastral COMMENT 'Motivo de Situación Cadastral';
-ALTER TABLE silver_empresas ALTER COLUMN data_inicio_actividades COMMENT 'Inicio de actividaddes';
+ALTER TABLE silver_empresas ALTER COLUMN inicio_actividades COMMENT 'Inicio de actividaddes';
 ALTER TABLE silver_empresas ALTER COLUMN cnae_principal COMMENT 'Código de Naturaleza Económica';
 ALTER TABLE silver_empresas ALTER COLUMN cnae_descripcion COMMENT 'Descripción de Naturaleza Económica';
 ALTER TABLE silver_empresas ALTER COLUMN direccion_tipo_via COMMENT 'Dirección - Tipo de Vía';
@@ -109,9 +109,7 @@ ALTER TABLE silver_empresas ALTER COLUMN direccion_numero_via COMMENT 'Direcció
 ALTER TABLE silver_empresas ALTER COLUMN direccion_colonia COMMENT 'Dirección - Colonia';
 ALTER TABLE silver_empresas ALTER COLUMN direccion_codigo_postal COMMENT 'Dirección - Código Postal';
 ALTER TABLE silver_empresas ALTER COLUMN direccion_entidad_federativa COMMENT 'Dirección - Entidad Federativa';
-ALTER TABLE silver_empresas ALTER COLUMN codigo_municipio COMMENT 'Código de Municipio';
-ALTER TABLE silver_empresas ALTER COLUMN cod_giro COMMENT 'Código de Giro';
-ALTER TABLE silver_empresas ALTER COLUMN desc_giro COMMENT 'Descripción del Giro';
+ALTER TABLE silver_empresas ALTER COLUMN codigo_municipio_siafi COMMENT 'Código de Municipio';
 ALTER TABLE silver_empresas ALTER COLUMN calificacion_responsable COMMENT 'Calificación del Responsable';
 ALTER TABLE silver_empresas ALTER COLUMN val_capital_social COMMENT 'Valor del capital social';
 ALTER TABLE silver_empresas ALTER COLUMN cod_tipo_empresa COMMENT 'Código del Tipo de Empresa';
