@@ -25,38 +25,38 @@ USE <tu_login>;
 CREATE OR REPLACE TABLE silver_empresas AS
 SELECT 
   est.cnpj_basico AS cnpj_basico,
-  matriz_filial AS nome_matriz,
-  nome_fantasia AS nome_fantasia_empresa,
-  razao_social AS nome_razao_social,
-  codigo_situacao_cadastral AS cod_situacao_cadastral,
-  data_situacao_cadastral AS data_situacao_cadastral,
-  motivo_situacao_cadastral AS motivo_situacao_cadastral,
-  data_inicio_atividade AS data_inicio_atividade,
+  matriz_filial AS nombre_matriz,
+  nombre_comercial AS nombre_comercial_empresa,
+  razon_social AS nome_razon_social,
+  codigo_situacion_cadastral AS codigo_situacion_cadastral,
+  data_situacion_cadastral AS data_situacion_cadastral,
+  motivo_situacion_cadastral AS motivo_situacion_cadastral,
+  inicio_actividades AS inicio_actividades,
   cnae_principal AS cnae_principal,
-  cnae.descricao AS cnae_descricao,
-  tipo_logradouro AS endereco_tipo_logradouro,
-  logradouro AS endereco_nome_logradouro,
-  numero AS endereco_numero_logradouro,
-  bairro AS endereco_bairro_logradouro,
-  cep AS endereco_numero_cep,
-  uf AS endereco_unidade_federativa,
+  cnae.descripcion AS cnae_descripcion,
+  tipo_via AS direccion_tipo_via,
+  via AS direccion_nombre_via,
+  numero AS direccion_numero_via,
+  colonia AS direccion_colonia,
+  cp AS direccion_codigo_postal,
+  uf AS direccion_entidad_federativa,
   codigo_municipio_siafi AS codigo_municipio_siafi,
-  natureza_juridica AS cod_natureza_juridica,
-  nat.descricao AS desc_natureza_juridica,
-  qualificacao_responsavel AS qualificacao_responsavel,
+  giro AS cod_giro,
+  giros.descripccion AS desc_giro,
+  calificacion_responsable AS calificacion_responsable,
   capital_social AS val_capital_social,
-  emp.porte_empresa AS cod_porte_empresa,
-  porte.desc_porte_empresa AS desc_porte_empresa,
-  ente_federativo_responsavel AS ente_federativo_responsavel
+  emp.tipo_empresa AS cod_tipo_empresa,
+  tipo.desc_tipo_empresa AS desc_tipo_empresa,
+  entidad_federativa_responsable AS entidad_federativa_responsable
 from bronze_estabelecimentos est
 join bronze_empresas emp
 on est.cnpj_basico = emp.cnpj_basico
 left join bronze_cnae cnae
 on est.cnae_principal = cnae.cod_cnae
-left join bronze_porte_empresa porte
-on emp.porte_empresa = porte.porte_empresa
-left join bronze_naturezas nat
-on emp.natureza_juridica = nat.codigo;
+left join bronze_tipo_empresa tipo
+on emp.tipo_empresa = tipo.tipo_empresa
+left join bronze_giros giros
+on emp.giro = nat.codigo;
 
 
 ```
@@ -115,8 +115,8 @@ ALTER TABLE silver_empresas ALTER COLUMN direccion_colonia COMMENT 'Dirección -
 ALTER TABLE silver_empresas ALTER COLUMN direccion_codigo_postal COMMENT 'Dirección - Código Postal';
 ALTER TABLE silver_empresas ALTER COLUMN direccion_entidad_federativa COMMENT 'Dirección - Entidad Federativa';
 ALTER TABLE silver_empresas ALTER COLUMN codigo_municipio COMMENT 'Código de Municipio';
-ALTER TABLE silver_empresas ALTER COLUMN cod_naturaleza_juridica COMMENT 'Código de Naturaleza Jurídica';
-ALTER TABLE silver_empresas ALTER COLUMN desc_naturaleza_juridica COMMENT 'Descripción de Naturaleza Jurídica';
+ALTER TABLE silver_empresas ALTER COLUMN cod_giro COMMENT 'Código de Giro';
+ALTER TABLE silver_empresas ALTER COLUMN desc_giro COMMENT 'Descripción del Giro';
 ALTER TABLE silver_empresas ALTER COLUMN calificacion_responsable COMMENT 'Calificación del Responsable';
 ALTER TABLE silver_empresas ALTER COLUMN val_capital_social COMMENT 'Valor del capital social';
 ALTER TABLE silver_empresas ALTER COLUMN cod_tipo_empresa COMMENT 'Código del Tipo de Empresa';

@@ -12,16 +12,15 @@ Los ejercicios deben ser ejecutados en la opción del Menú lateral "**SQL Edito
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab01_editor_sql.png">
 
-## Sesión 01: Estructura de TABLAS, BASE DE DATOS y CATÁLOGO
+## Sesión 01: Estructura de TABLAS y BASE DE DATOS
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab01_uc.png">
 
 | Tópico | Comando |
-| -- | -- |
-| **Catálogo** | CREATE CATALOG <nombre_catalogo> |
-| **Schema** | CREATE DATABASE IF NOT EXISTS <nombre_catalogo>.<nombre_base_datos>; |
-| **Tabla** | CREATE OR REPLACE TABLE <nombre_catalogo>.<nombre_base_datos>.<nombre_tabla>; |
-| **Vista** | CREATE OR REPLACE VIEW <nombre_catalogo>.<nombre_base_datos>.<nombre_tabla> AS ...; |
+| -- | -- ||
+| **Schema** | CREATE DATABASE IF NOT EXISTS <nombre_base_datos>; |
+| **Tabla** | CREATE OR REPLACE TABLE <nombre_base_datos>.<nombre_tabla>; |
+| **Vista** | CREATE OR REPLACE VIEW <nombre_base_datos>.<nombre_tabla> AS ...; |
 
 #### Referencia:
 * [Databricks Ayuda - Sintaxis DDL](https://docs.databricks.com/sql/language-manual/sql-ref-syntax-ddl-create-table.html)
@@ -29,8 +28,6 @@ Los ejercicios deben ser ejecutados en la opción del Menú lateral "**SQL Edito
 ## Ejercicio 01.01 - Creación de la base de datos
 
 ``` sql
-USE CATALOG academy;
-
 CREATE DATABASE IF NOT EXISTS <tu_login>;
 
 USE <tu_login>;

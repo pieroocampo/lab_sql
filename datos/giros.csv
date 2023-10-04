@@ -1,0 +1,91 @@
+﻿codigo,descripcion
+0000,Naturaleza legal no informada
+3271,Director de Partido Político local
+3280,Comité Financiero del Partido Político
+3298,Plebiscito o referéndum frente
+3301,Organización Social (OS)
+3999,Asociación privada
+4014,Empresa inmobiliaria individual
+4090,Candidato a cargos políticos electivos
+4120,Productor rural (individuos)
+5010,Organización Internacional
+5029,Representación diplomática extranjera
+1015,Agencia Pública de la rama Ejecutiva Federal
+1023,Agencia Pública del poder ejecutivo estatal o del Distrito Federal
+1031,Agencia Pública del poder ejecutivo municipal
+1040,Agencia Pública de la Legislatura Federal
+1058,Agencia Pública del poder legislativo estatal o del Distrito Federal
+1066,Agencia Pública del poder legislativo municipal
+1074,Agencia Pública del poder judicial federal
+1082,Agencia Pública del poder judicial estatal
+1104,Autoridad federal
+1112,Autoridad de distrito estatal o federal
+1120,Municipio municipal
+1139,Fundación Pública del Derecho Público Federal
+1147,Fundación Pública del Derecho Público del Estado o Distrito Federal
+1155,Fundación Pública del Derecho Público Municipal
+1163,Agencia Pública Autónoma Federal
+1171,Oficina pública autónoma estatal o distrito federal
+1180,Agencia pública autónoma municipal
+1198,Comité de policía
+1210,Consorcio Público de Derecho Público (Asociación Pública)
+1228,Consorcio público de derecho privado
+1236,Distrito estatal o federal
+1244,Condado
+1252,Fundación Pública de Derecho Federal Privado
+1260,Fundación Pública del Derecho Privado del Estado o el Distrito Federal
+1279,Fundación Pública del Derecho Privado Municipal
+1287,Fondo público de administración indirecta federal
+1295,Fondo público de administración indirecta estatal o distrito federal
+1309,Fondo público de administración indirecta municipal
+1317,Fondo público de administración federal directa
+1325,Fondo público de Administración Directa del Estado o Distrito Federal
+1333,Fondo público de administración directa municipal
+1341,Unidad
+2011,Compañía publica
+2038,Sociedad de economía mixta
+2046,A tiempo abierto
+2054,Corporación cerrada
+2062,Empresa comercial limitada
+2070,Compañía comercial a nombre colectivo
+2089,Compañía comercial en Comandita simple
+2097,Compañía comercial al mando por acciones
+2100,Sociedad Mercantil Capital e Industria
+2127,Sociedad de cuentas de participación
+2135,Emprendedor (individual)
+2143,Cooperativa
+2151,Consorcio de sociedades
+2160,Grupo de sociedades
+2178,"Establecimiento, en Brasil, de una sociedad extranjera"
+2194,"Establecimiento, en Brasil, de la Compañía Binacional Argentina-Brasil"
+2216,Compañía domiciliada en el extranjero
+2224,Fondo de Club/Inversión
+2232,Sociedad Pure Simple
+2240,Sociedad simple limitada
+2259,Sociedad simple en el nombre colectivo
+2267,Sociedad de empresa simple simple
+2275,Empresa binacional
+2283,Consorcio de empleadores
+2291,Consorcio simple
+2305,Compañía individual de responsabilidad limitada (de una empresaria)
+2313,Compañía individual de responsabilidad limitada (naturaleza simple)
+2321,Sociedad de Defensa de Unipessoal
+2330,Cooperativas de consumo
+2348,Empresa de innovación simple
+3034,Servicio de Registro y Notarial (Registro)
+3069,Privado
+3077,Servicio social autónomo
+3085,Condominio edilicio
+3107,Comisión de conciliación previa
+3115,Entidad de mediación y arbitraje
+3131,Unión
+3204,"Establecimiento, en Brasil, de Fundación o Asociación Extranjeros"
+3212,Fundación o asociación domiciliada en el extranjero
+3220,Organización religiosa
+3239,Comunidad indígena
+3247,Fondo privado
+3255,Agencia Nacional del Partido Político
+3263,Dirección Regional de Dirección Política del Partido
+5037,Otras instituciones extraterritoriales
+3328,Plan de beneficios de seguridad social complementario cerrado
+8885,Naturaleza legal no informada
