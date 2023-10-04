@@ -43,7 +43,7 @@ CREATE OR REPLACE TABLE bronze_tipo_empresa
 COMMENT "Tabla auxiliar, tipo de empresa"
 ```
 
- ## Ejercicio 01.03 - Insertando datos en la Tabla a través de SQL INSERT
+## Ejercicio 01.03 - Insertando datos en la Tabla a través de SQL INSERT
 
  ``` sql
  INSERT INTO bronze_tipo_empresa VALUES (1, "NO DISPONIBLE") ;
@@ -53,7 +53,7 @@ COMMENT "Tabla auxiliar, tipo de empresa"
  INSERT INTO bronze_tipo_empresa VALUES (5, "NULL") ;
 ```
 
- ## Ejercicio 01.04 - Verificando el contenido de la TABLA
+## Ejercicio 01.04 - Verificando el contenido de la TABLA
 
  ``` sql
 SELECT * 
@@ -61,7 +61,7 @@ FROM bronze_tipo_empresa
 ORDER BY tipo_empresa
 ```
 
- ## Ejercicio 01.05 - Modificando el contenido de la TABLA
+## Ejercicio 01.05 - Modificando el contenido de la TABLA
 
  ``` sql
 UPDATE bronze_tipo_empresa  
