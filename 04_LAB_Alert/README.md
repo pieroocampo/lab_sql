@@ -14,7 +14,7 @@ El objetivo de este laboratorio es explorar las funcionalidades de creación de 
 
 ``` sql
 
-select dolar_cotizacion as valor_dolar
+select dolar_apertura as valor_dolar
 FROM <tu_login>.bronze_dolar
 order by dolar_dia DESC;
 
