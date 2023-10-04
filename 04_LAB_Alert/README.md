@@ -15,13 +15,13 @@ El objetivo de este laboratorio es explorar las funcionalidades de creación de 
 ``` sql
 
 select dolar_cotizacion as valor_dolar
-FROM academy.<tu_login>.bronze_dolar
+FROM <tu_login>.bronze_dolar
 order by dolar_dia DESC;
 
 
 ```
 </br></br>
-Guarda la Query. Sugerencia: "Query_Alerta"+ <tu_login>
+Guarda la Consulta. Sugerencia: "Query_Alerta"+ <tu_login>
 </br></br>
 
 
