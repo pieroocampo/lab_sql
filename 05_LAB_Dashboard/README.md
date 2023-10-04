@@ -13,7 +13,7 @@ Vamos a utilizar el "Editor SQL".
 ## Ejercicio 05.01 - Creación de la Consulta
 
 ``` sql
-SELECT * FROM academy.<tu_login>.bronze_dolar;
+SELECT * FROM <tu_login>.bronze_dolar;
 
 
 ```
