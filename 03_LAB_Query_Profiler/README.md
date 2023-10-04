@@ -17,7 +17,6 @@ Vamos a usar el "Editor SQL".
 ## Ejercicio 03.01 - Creación de la Consults
 
 ``` sql
-USE CATALOG academy;
 
 USE <tu_login>;
 
@@ -41,8 +40,6 @@ SELECT
   cp AS direccion_codigo_postal,
   uf AS direccion_entidad_federativa,
   codigo_municipio_siafi AS codigo_municipio_siafi,
-  giro AS cod_giro,
-  giros.descripccion AS desc_giro,
   calificacion_responsable AS calificacion_responsable,
   capital_social AS val_capital_social,
   emp.tipo_empresa AS cod_tipo_empresa,
@@ -55,8 +52,6 @@ left join bronze_cnae cnae
 on est.cnae_principal = cnae.cod_cnae
 left join bronze_tipo_empresa tipo
 on emp.tipo_empresa = tipo.tipo_empresa
-left join bronze_giros giros
-on emp.giro = nat.codigo;
 
 
 ```
