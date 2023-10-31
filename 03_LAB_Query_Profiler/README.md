@@ -45,7 +45,7 @@ SELECT
   emp.tipo_empresa AS cod_tipo_empresa,
   tipo.desc_tipo_empresa AS desc_tipo_empresa,
   entidad_federativa_responsable AS entidad_federativa_responsable
-from bronze_estabelecimentos est
+from bronze_establecimientos est
 join bronze_empresas emp
 on est.cnpj_basico = emp.cnpj_basico
 left join bronze_cnae cnae
