@@ -18,7 +18,7 @@ Vamos a usar el "Editor SQL".
 
 ``` sql
 
-USE <tu_login>;
+USE <reemplazar por nombre de la base de datos>;
 
 
 CREATE OR REPLACE TABLE silver_empresas AS
