@@ -5,14 +5,14 @@
 
 Entrenamiento práctico en la plataforma Databricks con enfoque en las funcionalidades de Análisis (SQL, Query, Dask, DataViz, SQL end-point).
 
-## Objetivos del Ejercicio
+### Objetivos del Ejercicio
 
 El objetivo de este laboratorio es conocer las funcionalidades de consulta (_Query_) de la plataforma Databricks, utilizando el lenguaje SQL (y las interfaces visuales), explorando las potencialidades Analíticas.
 Los ejercicios deben ser ejecutados en la opción del Menú lateral "**SQL Editor**".
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab01_editor_sql.png">
 
-## Sesión 01: Estructura de TABLAS y BASE DE DATOS
+### Sesión 01: Estructura de TABLAS y BASE DE DATOS
 
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab01_uc.png">
 
